@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_back.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/ic_back_bottomsheet.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/ic_child_bottomsheet.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/ic_svg.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/shape_bottomsheet.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/shape_child_bottomsheet.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/shape_child_bottomsheet_bottom.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/shape_child_bottomsheet_top.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/shape_header_profile.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout-v28/screen_profile.xml" value="0.1921875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1921875" />
+        <entry key="app/src/main/res/layout/custom_info_contents.xml" value="0.1921875" />
+        <entry key="app/src/main/res/layout/item_data_divider.xml" value="0.1921875" />
+        <entry key="app/src/main/res/layout/item_trip.xml" value="0.1921875" />
+        <entry key="app/src/main/res/layout/motion_layout.xml" value="0.4019607843137255" />
+        <entry key="app/src/main/res/layout/screen_map.xml" value="0.384375" />
+        <entry key="app/src/main/res/layout/screen_my_trips.xml" value="0.1921875" />
+        <entry key="app/src/main/res/layout/screen_profile.xml" value="0.384375" />
+        <entry key="app/src/main/res/layout/start_motion.xml" value="0.1921875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1642512077294686" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyTaxi(Test)</string>
+
+    <string name="back_again">Click again to exit</string>
+</resources>
