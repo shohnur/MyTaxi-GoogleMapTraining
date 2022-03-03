@@ -1,4 +1,4 @@
-package uz.mytaxi.utils
+package uz.mytaxi.utils.maputils
 
 data class GeoCodingResp(
     val plus_code: PlusCode,

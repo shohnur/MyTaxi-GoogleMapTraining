@@ -24,7 +24,11 @@ import kotlinx.android.synthetic.main.custom_info_contents.view.*
 import kotlinx.android.synthetic.main.screen_map.*
 import uz.mytaxi.R
 import uz.mytaxi.base.BaseFragment
-import uz.mytaxi.utils.*
+import uz.mytaxi.utils.inDevelopment
+import uz.mytaxi.utils.loge
+import uz.mytaxi.utils.logi
+import uz.mytaxi.utils.maputils.GeoCodingResp
+import uz.mytaxi.utils.toast
 
 class MapScreen : BaseFragment(R.layout.screen_map) {
 
