@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 data class TripModel(
+    var id: Int,
     private var date: Date,
     private var from: String,
     private var where: String,

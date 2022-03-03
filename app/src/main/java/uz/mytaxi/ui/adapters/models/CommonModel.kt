@@ -2,6 +2,7 @@ package uz.mytaxi.ui.adapters.models
 
 abstract class CommonModel {
     abstract fun getType(): Int
+    open fun getID(): Int = 0
     open fun getTime(): String = ""
     open fun getFromPlace(): String = ""
     open fun getWherePlace(): String = ""
