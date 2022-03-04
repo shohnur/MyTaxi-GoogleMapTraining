@@ -9,7 +9,6 @@ class ProfileScreen : BaseFragment(R.layout.screen_profile) {
 
 
     override fun initialize() {
-        img.setImageResource(R.drawable.profile)
         initClicks()
     }
 
@@ -22,11 +21,7 @@ class ProfileScreen : BaseFragment(R.layout.screen_profile) {
             addFragment(MyTripsScreen(), setAnim = 0)
         }
 
-        backMapScreen.apply {
-            setImageResource(R.drawable.img)
-            setOnClickListener { finishFragment() }
-        }
-
+        backMapScreen.setOnClickListener { finishFragment() }
 
     }
 
