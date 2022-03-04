@@ -84,11 +84,13 @@ class TripDetailScreen :
 
             addMarker(
                 MarkerOptions().position(tashkent)
-                    .icon(getBitmapDescriptor(R.drawable.ic_dot_blue))
+//                    .icon(getBitmapDescriptor(R.drawable.ic_dot_blue))
+                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
             )
             addMarker(
                 MarkerOptions().position(kashkadarya)
-                    .icon(getBitmapDescriptor(R.drawable.ic_dot_red))
+//                    .icon(getBitmapDescriptor(R.drawable.ic_dot_red))
+                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE))
             )
 
             addPolyline(lineOptions).apply {
