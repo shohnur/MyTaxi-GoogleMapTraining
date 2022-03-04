@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/ic_back.xml" value="0.20833333333333334" />
         <entry key="app/src/main/res/drawable/ic_back_bottomsheet.xml" value="0.20833333333333334" />
         <entry key="app/src/main/res/drawable/ic_child_bottomsheet.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/ic_dot_blue.xml" value="0.20833333333333334" />
         <entry key="app/src/main/res/drawable/ic_help.xml" value="0.20833333333333334" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.20833333333333334" />
         <entry key="app/src/main/res/drawable/ic_star.xml" value="0.20833333333333334" />
@@ -29,7 +30,7 @@
         <entry key="app/src/main/res/layout/screen_map.xml" value="0.384375" />
         <entry key="app/src/main/res/layout/screen_my_trips.xml" value="0.1921875" />
         <entry key="app/src/main/res/layout/screen_profile.xml" value="0.384375" />
-        <entry key="app/src/main/res/layout/screen_trip_detail.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/screen_trip_detail.xml" value="0.1615678776290631" />
         <entry key="app/src/main/res/layout/start_motion.xml" value="0.1921875" />
       </map>
     </option>

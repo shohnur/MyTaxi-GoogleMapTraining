@@ -7,9 +7,6 @@ import android.location.Location
 import android.os.CountDownTimer
 import android.view.View
 import androidx.core.app.ActivityCompat
-import com.android.volley.Request
-import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.toolbox.Volley
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -19,7 +16,6 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.libraries.places.api.Places
 import com.google.android.libraries.places.api.net.PlacesClient
-import com.google.gson.Gson
 import kotlinx.android.synthetic.main.custom_info_contents.view.*
 import kotlinx.android.synthetic.main.screen_map.*
 import uz.mytaxi.R
@@ -27,7 +23,6 @@ import uz.mytaxi.base.BaseFragment
 import uz.mytaxi.utils.inDevelopment
 import uz.mytaxi.utils.loge
 import uz.mytaxi.utils.logi
-import uz.mytaxi.utils.maputils.GeoCodingResp
 import uz.mytaxi.utils.toast
 
 class MapScreen : BaseFragment(R.layout.screen_map) {
@@ -102,31 +97,31 @@ class MapScreen : BaseFragment(R.layout.screen_map) {
             getDeviceLocation()
             updateLocationUI()
 
-            googleMap.setOnCameraChangeListener {
-                val url =
-                    "https://maps.googleapis.com/maps/api/geocode/json?latlng=${it.target.latitude},${it.target.longitude}&sensor=true&key=${
-                        getString(R.string.google_maps_key)
-                    }"
-                val jsonObjectRequest = JsonObjectRequest(
-                    Request.Method.GET, url, null,
-                    { response ->
-                        logi(response.toString(),"RESPONSE")
-                        try {
-                            val data =
-                                Gson().fromJson(response.toString(), GeoCodingResp::class.java)
-                            logi(data.results[0].formatted_address, tag = "Response")
-                            from.text=data.results[0].formatted_address
-                        } catch (e: Exception) {
-                            loge(e.message.toString(), tag = "Response")
-                        }
-                    },
-                    { error ->
-                        error.printStackTrace()
-                    }
-                )
-
-                Volley.newRequestQueue(requireContext()).add(jsonObjectRequest)
-            }
+//            googleMap.setOnCameraChangeListener {
+//                val url =
+//                    "https://maps.googleapis.com/maps/api/geocode/json?latlng=${it.target.latitude},${it.target.longitude}&sensor=true&key=${
+//                        getString(R.string.google_maps_key)
+//                    }"
+//                val jsonObjectRequest = JsonObjectRequest(
+//                    Request.Method.GET, url, null,
+//                    { response ->
+//                        logi(response.toString(),"RESPONSE")
+//                        try {
+//                            val data =
+//                                Gson().fromJson(response.toString(), GeoCodingResp::class.java)
+//                            logi(data.results[0].formatted_address, tag = "Response")
+//                            from.text=data.results[0].formatted_address
+//                        } catch (e: Exception) {
+//                            loge(e.message.toString()+response, tag = "Response")
+//                        }
+//                    },
+//                    { error ->
+//                        error.printStackTrace()
+//                    }
+//                )
+//
+//                Volley.newRequestQueue(requireContext()).add(jsonObjectRequest)
+//            }
 
         }
     }
